@@ -9,7 +9,7 @@ iii) Cut and paste a small portion of the image.
 Anaconda - Python 3.7
 ## Algorithm:
 ### Step1:
-Choose an image and save it as a filename.jpg
+Choose an image and save it as a filename.png.
 ### Step2:
 Use imread(filename, flags) to read the file.
 ### Step3:
@@ -24,29 +24,55 @@ End the program and close the output image windows.
 i) #To Read,display the image
 ```
   import cv2
-
+A=cv2.imread("14288_089.png",1)
+cv2.imshow("Car",A)
+cv2.waitKey(0)
 ```
 ii) #To write the image
 ```
-
+import cv2
+A=cv2.imread("14288_089.png",1)
+cv2.imwrite("14288_089.png",A)
+cv2.imshow("Car",A)
+cv2.waitKey(0)
 
 
 ```
 iii) #Find the shape of the Image
-``python3
+```
+import random
+import cv2
+A=cv2.imread("14288_089.png",1)
+for i in range(100):
+    for j in range(A.shape[1]):
+        A[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow("Car",A)
+cv2.waitKey(0)
 
 
 
 ```
 iv) #To access rows and columns
-```python3
-
+```
+import random
+import cv2
+A=cv2.imread("14288_089.png",1)
+for i in range(100):
+    for j in range(A.shape[1]):
+        A[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow("Car",A)
+cv2.waitKey(0)
 
 
 ```
 v) #To cut and paste portion of image
-```python3
-
+```
+import cv2
+A=cv2.imread("14288_089.png",1)
+tag=A[50:150,75:90]
+A[25:125,50:65]=tag
+cv2.imshow("Car",A)
+cv2.waitKey(0)
 
 
 ```
@@ -55,26 +81,29 @@ v) #To cut and paste portion of image
 
 ### i) Read and display the image
 
-<br>
-<br>
+![inp](1.png)
+
 
 ### ii)Write the image
 
-<br>
-<br>
+
+![inp](1.png)
+
 
 ### iii)Shape of the Image
 
-<br>
-<br>
+
+![inp](2.png)
+
 
 ### iv)Access rows and columns
-<br>
-<br>
+
+![inp](2.png)
+
 
 ### v)Cut and paste portion of image
-<br>
-<br>
+
+![inp](3.png)
 
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
