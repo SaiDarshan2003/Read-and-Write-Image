@@ -40,15 +40,9 @@ cv2.waitKey(0)
 ```
 iii) #Find the shape of the Image
 ```
-import random
 import cv2
-A=cv2.imread("14288_089.png",1)
-for i in range(100):
-    for j in range(A.shape[1]):
-        A[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)]
-cv2.imshow("Car",A)
-cv2.waitKey(0)
-
+a=cv2.imread('14288_089.png',1)
+print(a.shape)
 
 
 ```
@@ -93,7 +87,7 @@ cv2.waitKey(0)
 ### iii)Shape of the Image
 
 
-![inp](2.png)
+![inp](4.png)
 
 
 ### iv)Access rows and columns
