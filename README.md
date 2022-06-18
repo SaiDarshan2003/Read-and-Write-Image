@@ -1,10 +1,15 @@
 # READ AND WRITE AN IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
+<br>
 i) Read, display, and write an image.
+<br>
+<br>
 ii) Access the rows and columns in an image.
+<br>
+<br>
 iii) Cut and paste a small portion of the image.
-
+<br>
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
@@ -23,31 +28,24 @@ End the program and close the output image windows.
 ### Register Number: 212221240047
 i) #To Read,display the image
 ```
-  import cv2
+import cv2
 A=cv2.imread("14288_089.png",1)
 cv2.imshow("Car",A)
 cv2.waitKey(0)
-```
+
 ii) #To write the image
-```
 import cv2
 A=cv2.imread("14288_089.png",1)
 cv2.imwrite("14288_089.png",A)
 cv2.imshow("Car",A)
 cv2.waitKey(0)
 
-
-```
 iii) #Find the shape of the Image
-```
 import cv2
 a=cv2.imread('14288_089.png',1)
 print(a.shape)
 
-
-```
 iv) #To access rows and columns
-```
 import random
 import cv2
 A=cv2.imread("14288_089.png",1)
@@ -57,49 +55,24 @@ for i in range(100):
 cv2.imshow("Car",A)
 cv2.waitKey(0)
 
-
-```
 v) #To cut and paste portion of image
-```
 import cv2
 A=cv2.imread("14288_089.png",1)
 tag=A[50:150,75:90]
 A[25:125,50:65]=tag
 cv2.imshow("Car",A)
 cv2.waitKey(0)
-
-
 ```
-
 ## Output:
-
 ### i) Read and display the image
-
 ![inp](1.png)
-
-
 ### ii)Write the image
-
-
 ![inp](1.png)
-
-
 ### iii)Shape of the Image
-
-
 ![inp](4.png)
-
-
 ### iv)Access rows and columns
-
 ![inp](2.png)
-
-
 ### v)Cut and paste portion of image
-
 ![inp](3.png)
-
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
-
-
