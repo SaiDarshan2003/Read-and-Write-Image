@@ -4,9 +4,7 @@ To write a python program using OpenCV to do the following image manipulations.
 <br>
 i) Read, display, and write an image.
 <br>
-<br>
 ii) Access the rows and columns in an image.
-<br>
 <br>
 iii) Cut and paste a small portion of the image.
 <br>
